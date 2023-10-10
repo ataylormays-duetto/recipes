@@ -22,6 +22,7 @@ type Recipe {
   cookingTime: Float
   "How much time it takes to prep the ingredients, in minutes"
   prepTime: Float
+    @deprecated(reason: "Use readyTime; field will be removed in December 2023")
   "How much time it takes in total to prep and cook the recipe, in minutes"
   readyTime: Float
   "How many servings this recipe makes"
